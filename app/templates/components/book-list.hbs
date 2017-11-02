@@ -1,0 +1,14 @@
+<div class="grid-x grid-margin-x">
+    <div class="large-12 medium-12 cell">
+        <div class="grid-x grid-margin-x">
+            {{#each books as |book|}}
+                <div class="large-4 cell callout">
+                    <h3>{{book.title}}</h3>
+                    <p>Auteur : {{book.author.firstname}} {{book.author.lastname}}</p>
+                    <p>{{book.description}}</p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+{{yield}}

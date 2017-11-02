@@ -2,7 +2,13 @@
 
 # compiled output
 /dist
+/deploy-dist
 /tmp
+/docs
+
+# reporters
+**/*-reports.xml
+**/*-checkstyle.xml
 
 # dependencies
 /node_modules
@@ -15,3 +21,11 @@
 /libpeerconnection.log
 npm-debug.log*
 testem.log
+
+# Pipeline (http://srisvm-xwiki01.isocel.info:8080/xwiki/bin/view/White+Rabbit+%28new+2%29/4+-+PIC/4.2+-+La+Cha%C3%AEne+de+Fabrication/)
+pipeline
+.sonar
+ansible-wrf-deploiement
+
+# WebStorm
+.idea

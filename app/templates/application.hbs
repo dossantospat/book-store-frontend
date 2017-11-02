@@ -1,5 +1,38 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="grid-container">
 
-{{outlet}}
+    <div class="top-bar">
+        <div class="top-bar-left">
+            {{#zf-dropdown-menu}}
+                <li>
+                    <a href="#">Item 1</a>
+                    <ul class="menu">
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            {{/zf-dropdown-menu}}
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="grid-x grid-margin-x">
+        <div class="large-12 cell">
+            <h1>Librairie</h1>
+        </div>
+    </div>
+
+    <div class="grid-x grid-margin-x">
+        <div class="large-12 medium-12 cell">
+            {{outlet}}
+        </div>
+    </div>
+</div>
