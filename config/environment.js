@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'book-store-frontend',
     environment: environment,
@@ -29,6 +29,13 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['ember-cli-mirage'] = {
+      enabled: false
+    }
+    ENV.contentSecurityPolicy = {
+      // ... other stuff here
+      'connect-src': "'self' http://localhost:8181"
+    }
   }
 
   if (environment === 'test') {
