@@ -39,9 +39,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Using a different backend
 
-Specify what it takes to deploy your app.
+To proxy ember request to a different backend, for instance a wiremock backend, use
+
+* `ember serve --proxy http://localhost:8181`
 
 ## Further Reading / Useful Links
 
